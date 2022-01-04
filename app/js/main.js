@@ -24,6 +24,59 @@ function openBox() {
 
 openBox();
 
+// Map popap
+
+function showCity() {
+
+  let kramatorskCity = document.querySelector('#kramatorsk');
+  let severodonetskCity = document.querySelector('#severodonetsk');
+  let dnieperCity = document.querySelector('#dnieper');
+  let kremenchukCity = document.querySelector('#kremenchuk');
+
+  kramatorskCity.onmouseout = function() {
+    document.getElementById('kramatorsk-icon').src = 'images/map/icon.svg';
+    document.getElementById('kramatorsk-show').style.display ='none';
+  };
+
+  kramatorskCity.onmouseover = function() {
+    document.getElementById('kramatorsk-icon').src = 'images/map/icon-active.svg';
+    document.getElementById('kramatorsk-show').style.display ='block';
+  };
+
+  severodonetskCity.onmouseout = function() {
+    document.getElementById('severodonetsk-icon').src = 'images/map/icon.svg';
+    document.getElementById('severodonetsk-show').style.display ='none';
+  };
+
+  severodonetskCity.onmouseover = function() {
+    document.getElementById('severodonetsk-icon').src = 'images/map/icon-active.svg';
+    document.getElementById('severodonetsk-show').style.display ='block';
+  };
+
+  dnieperCity.onmouseout = function() {
+    document.getElementById('dnieper-icon').src = 'images/map/icon.svg';
+    document.getElementById('dnieper-show').style.display ='none';
+  };
+
+  dnieperCity.onmouseover = function() {
+    document.getElementById('dnieper-icon').src = 'images/map/icon-active.svg';
+    document.getElementById('dnieper-show').style.display ='block';
+  };
+
+  kremenchukCity.onmouseout = function() {
+    document.getElementById('kremenchuk-icon').src = 'images/map/icon.svg';
+    document.getElementById('kremenchuk-show').style.display ='none';
+  };
+
+  kremenchukCity.onmouseover = function() {
+    document.getElementById('kremenchuk-icon').src = 'images/map/icon-active.svg';
+    document.getElementById('kremenchuk-show').style.display ='block';
+  };
+
+}
+
+showCity();
+
 
 // Converter SVG
 
